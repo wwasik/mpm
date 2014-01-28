@@ -1,4 +1,4 @@
-package com.efektech.myprojectmanager.model;
+package wwasik.mpm.model;
 
 /**
  * @author dom

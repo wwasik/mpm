@@ -1,10 +1,14 @@
-package com.efektech.myprojectmanager.model;
+package wwasik.mpm.model;
+
+import org.springframework.data.annotation.Id;
 
 /**
- * @author dom
+ * @author Wojtek
  */
 public class Company {
 
+    @Id
+    private String id;
     private String name;
     private String description;
     private String website;

@@ -1,7 +1,7 @@
-package com.efektech.myprojectmanager.model;
+package wwasik.mpm.model;
 
-import com.efektech.myprojectmanager.model.person.Client;
-import com.efektech.myprojectmanager.model.person.Employee;
+import wwasik.mpm.model.person.Client;
+import wwasik.mpm.model.person.Employee;
 import java.util.Date;
 
 /**

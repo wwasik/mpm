@@ -1,6 +1,6 @@
-package com.efektech.myprojectmanager.model.person;
+package wwasik.mpm.model.person;
 
-import com.efektech.myprojectmanager.model.Rank;
+import wwasik.mpm.model.Rank;
 
 /**
  * @author dom
