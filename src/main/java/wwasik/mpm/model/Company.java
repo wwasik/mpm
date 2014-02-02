@@ -1,5 +1,6 @@
 package wwasik.mpm.model;
 
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.annotation.Id;
 
 /**
@@ -9,6 +10,7 @@ public class Company {
 
     @Id
     private String id;
+    @NotEmpty
     private String name;
     private String description;
     private String website;

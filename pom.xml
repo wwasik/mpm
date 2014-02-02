@@ -54,6 +54,19 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         
+        <!--Validation-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+        
+        <dependency>  
+            <groupId>org.glassfish</groupId> 
+            <artifactId>javax.json</artifactId> 
+            <version>1.0.4</version> 
+            <scope>test</scope>
+        </dependency>
+        
         <!-- MongoDB -->
         <dependency>
             <groupId>org.springframework.data</groupId>
@@ -65,11 +78,19 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.8.7</version>
+            <scope>test</scope>
         </dependency>
         
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.easytesting</groupId>
+            <artifactId>fest-assert</artifactId>
+            <version>1.4</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
