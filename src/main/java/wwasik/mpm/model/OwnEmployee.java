@@ -1,9 +1,10 @@
-package wwasik.mpm.model.person;
+package wwasik.mpm.model;
 
 /**
  * @author dom
  */
-public class Employee extends Person {
+public class OwnEmployee extends Employee {
+    
     private Integer hoursAveliable;
 
     public Integer getHoursAveliable() {

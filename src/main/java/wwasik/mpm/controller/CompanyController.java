@@ -23,7 +23,6 @@ public class CompanyController {
 
     @RequestMapping(value = "/company", method = RequestMethod.POST)
     public void create(@Valid @RequestBody(required = true) Company company) {
-        log.info(String.format("Company: %s, %s, %s, %s", company.getName(), company.getDescription(), company.getLogo(), company.getWebsite()));
         repository.save(company);
     }
 }

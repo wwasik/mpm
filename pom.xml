@@ -60,6 +60,12 @@
             <artifactId>hibernate-validator</artifactId>
         </dependency>
         
+        <!-- Time -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+        </dependency>
+        
         <dependency>  
             <groupId>org.glassfish</groupId> 
             <artifactId>javax.json</artifactId> 
