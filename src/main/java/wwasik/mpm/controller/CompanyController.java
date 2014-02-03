@@ -26,9 +26,4 @@ public class CompanyController {
         log.info(String.format("Company: %s, %s, %s, %s", company.getName(), company.getDescription(), company.getLogo(), company.getWebsite()));
         repository.save(company);
     }
-
-    public CompanyRepository getRepository() {
-        return repository;
-    }
-
 }
