@@ -8,7 +8,6 @@ import wwasik.mpm.model.Company;
 /**
  * @author Wojtek
  */
-@Repository
 public interface CompanyRepository extends MongoRepository<Company, Serializable> {
 
 }
