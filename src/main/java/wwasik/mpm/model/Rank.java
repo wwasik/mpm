@@ -7,6 +7,6 @@ public enum Rank {
     DEVELOPER,
     ELECRICIAN,
     ANALIST,
-    MENAGER,
+    MANAGER,
     SALESMAN;
 }

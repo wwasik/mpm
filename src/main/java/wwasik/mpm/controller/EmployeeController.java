@@ -9,40 +9,44 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import wwasik.mpm.model.Project;
-import wwasik.mpm.repository.ProjectRepository;
+import wwasik.mpm.model.Employee;
+import wwasik.mpm.repository.EmployeeRepository;
 
 /**
  * @author Wojtek
  */
 @RestController
-@RequestMapping(value = "/project")
-public class ProjectController {
+@RequestMapping(value = "/employee")
+public class EmployeeController {
 
     @Autowired
-    private ProjectRepository repository;
+    private EmployeeRepository repository;
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<Project> findAll() {
+    public List<Employee> findAll() {
         return repository.findAll();
     }
     
     @RequestMapping(method = RequestMethod.POST)
-    public void save(@Valid @RequestBody(required = true) Project p) {
-        repository.save(p);
+    public void save(@Valid @RequestBody(required = true) Employee e) {
+        repository.save(e);
     }
     
     @RequestMapping(method = RequestMethod.PUT)
-    public void update(@Valid @RequestBody(required = true) Project p) {
-        Project currentProject = repository.findOne(p.getId());
-        if (currentProject != null) {
-            p.setId(currentProject.getId());
-            repository.save(p);
+    public void update(@Valid @RequestBody(required = true) Employee e) {
+        Employee current = repository.findOne(e.getId());
+        if (current != null) {
+            current.setMail(e.getMail());
+            current.setName(e.getName());
+            current.setPhone(e.getPhone());
+            current.setRank(e.getRank());
+            current.setSurname(e.getSurname());
+            repository.save(e);
         }
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Project findOne(@PathVariable Serializable id) {
+    public Employee findOne(@PathVariable Serializable id) {
         return repository.findOne(id);
     }
 
